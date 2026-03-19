@@ -1,4 +1,9 @@
 
+#Modifica el ejercicio 4 para que, en lugar de imprimir los números, genere dos listas:
+#una con los múltiplos de 5 y otra con el resto de los números. Imprimí ambas listas al
+#finalizar.
+
+
 numero = int(input("Introduce hasta qué número quieres procesar: "))
 
 
