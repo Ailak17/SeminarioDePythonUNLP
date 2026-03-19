@@ -33,8 +33,13 @@ while attempts > 0:
     print(f"Intentos restantes: {attempts}")
     print(f"Letras usadas: {', '.join(guessed)}")
 
-    letter = input("Ingresá una letra: ")
-
+    letter = input("Ingresá una letra: ").lower() #paso a minusculas por que no tomaba mayus sino
+    #inciso A: Modificar para que los intentos sean letras
+    if len(letter) != 1 or not letter.isalpha(): 
+        print("Entrada no valida")
+        print()
+        continue
+    
     if letter in guessed:
         print("Ya usaste esa letra.")
     elif letter in word:
